@@ -1,6 +1,6 @@
 # Ada Front End Estático
 
-Material público para o ensino de HTML5, CSS3 e JS para alunos. Acesse o material em PDF, analise o código disponibilizado para cada exercício e veja-os funcionando em execução direta via repositório GitHub.
+Material público para o ensino de HTML5, CSS3 e JS para alunos.
 
 ## Direitos de uso
 
