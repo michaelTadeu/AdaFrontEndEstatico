@@ -1,0 +1,13 @@
+p {
+    color: red; 
+    font-family: 'Gill Sans';
+    font-size: 5pt;
+}
+
+h1 {
+    color: cyan;
+}
+
+.p_diferente {
+    color: pink;
+}
