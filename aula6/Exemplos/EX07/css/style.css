@@ -1,0 +1,18 @@
+h2 {
+    background-color: darkblue;
+    color: white;
+}
+
+.titulo2 {
+    background-color: #8B008B;
+    color: #FFFF00;
+}
+
+.titulo3 {
+    background-color: rgb(139, 0, 69);
+    color: rgb(0, 139, 74);
+}
+
+.texto-centralizado {
+    text-align: center;
+}

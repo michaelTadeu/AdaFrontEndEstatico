@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+@import url("fontawesome-free/css/all.css");
+@import url("framework.css");
+
+/* Header
+-------------------------------------------*/
+.overlay {
+    color: #FFFFFF;
+    background-color: inherit;
+}
+
+.overlay::after {
+    color: inherit;
+    background-color: rgba(0, 0, 0, .55);
+}
+
+.overlay.light {
+    color: #474747;
+}
+
+.overlay.light::after {
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.padtop {
+    padding: 80px 0 0 0;
+}
+
+body {
+   color: #FFFFFF;
+   background-color: azure; 
+}
+
+a {
+    color:#0AC6FC;
+}
+
+#header {
+    padding: 0 30px;
+}
+
+#header #logo {
+    margin: 22px 0 0 0;
+}
+
+#header #logo h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    font-variant: small-caps;
+}
+
+*,
+*::before,
+*::after {
+    transition: all .3s ease-in-out;
+}
+
+#mainav form * {
+    transition: none !important;
+}
+
+#header {
+    color: #FFFFFF;
+    background-color: #01546B;
+}
+
+#header #logo a {
+    color: inherit;
+}
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul,
+nav ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#mainav,
+#breadcrumb,
+.sidebar nav {
+    line-height: normal;
+}
+
+#mainav .drop::after,
+#mainav li li .drop::after,
+#breadcrumb li a::after,
+.sidebar nav a::after {
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+/* Top Navigation */
+#mainav {}
+
+#mainav ul {
+    text-transform: uppercase;
+}
+
+#mainav ul ul {
+    position: absolute;
+    width: 180px;
+    text-transform: none;
+    z-index: 9999;
+}
+
+#mainav ul ul ul {
+    left: 180px;
+    top: 0;
+}
+
+#mainav li {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px 0 0;
+    padding: 0;
+}
+
+#mainav li:last-child {
+    margin-right: 0;
+}
+
+#mainav li li {
+    width: 100%;
+    margin: 0;
+}
+
+#mainav li a {
+    display: block;
+    padding: 30px 0;
+}
+
+#mainav li li a {
+    border: solid;
+    border-width: 0 0 1px 0;
+}
+
+#mainav .drop {
+    padding-left: 15px;
+}
+
+#mainav li li a,
+#mainav li li .drop {
+    display: block;
+    margin: 0;
+    padding: 10px 15px;
+}
+
+#mainav .drop::after,
+#mainav li li .drop::after {
+    content: "\f0d7";
+}
+
+#mainav .drop::after {
+    top: 35px;
+    left: 5px;
+}
+
+#mainav li li .drop::after {
+    top: 15px;
+    left: 5px;
+}
+
+#mainav ul ul {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#mainav ul li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+#mainav form {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#mainav form select,
+#mainav form select option {
+    display: block;
+    cursor: pointer;
+    outline: none;
+}
+
+#mainav form select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid;
+}
+
+#mainav form select option {
+    margin: 5px;
+    padding: 0;
+    border: none;
+}
+
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:750px) {
+    #header {
+        text-align: center;
+    }
+    #header #logo {
+        margin: 15px;        
+    }
+}
