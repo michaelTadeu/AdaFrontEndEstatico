@@ -3,33 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo Lista Não-Ordenada</title>
+    <title>Exemplo 1 Form</title>
 </head>
 <body>
-    <h1>Itens de uma lista não-ordenada</h1>
-    <ul>
-        <li>Primeiro Item</li>
-        <li>Segundo Item
-            <ul>
-                <li>Primeio Item do Segundo Tópico</li>
-                <ul>
-                    <li>
-                        Primeiro item do segundo subitem do segundo item
-                    </li>
-                    <ul>
-                        <li>
-                            Primeiro item do segundo subitem do segundo item
-                        </li>
-                    </ul>
-                </ul>                
-            </ul>
-    </ul>
-    <h2>Lista de Compras</h2>
-    <ul type="none">
-        <li>Pão</li>
-        <li>Leite</li>
-        <li>Tomate</li>
-        <li>Alface</li>
-    </ul>
+    <form>
+        <div>
+            Selecione o Produto:
+            <select name="produtos">
+                <option>Selecione...</option>
+                <option value="caneta">Caneta</option>
+                <option value="caderno">Caderno</option>
+                <option value="lapis">Lapís</option>
+            </select>
+        </div>
+        <div>
+            <input name="reset" type="reset" value="Limpar" onclick="function()"/>
+            <input name="submit" type="submit" value="Submeter"/>
+        </div>
+    </form>    
 </body>
 </html>
