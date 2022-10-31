@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  grid-template-columns: 55px repeat(3, 1fr) 55px
+}
+
+.box {
+  background-color: tomato;
+  margin: 2px;
+  padding: 1px;
+  text-align: center;  
+}

@@ -1,0 +1,22 @@
+.container {
+    display: grid;
+    background-color: greenyellow;
+    /* grid-template-columns: repeat(4, auto); */
+    grid-template-columns: auto auto auto auto;
+    /* grid-template-rows: 150px 250px; */
+    /* grid-template-areas: 'item1 item1 item1...'; */
+    /* grid-template: auto 100px / auto 30% auto 70%; */
+    padding: 10px;
+    grid-gap: 5px;
+}
+
+.itens > div {
+    background-color: blueviolet;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.item7 {
+    grid-area: 1 / 2 / span 3 / span 4;
+}

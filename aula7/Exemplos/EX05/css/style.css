@@ -1,0 +1,14 @@
+.container {
+    display: grid;
+    grid-template-columns: 70px 70px 70px auto;
+    grid-gap: 5px;
+    background-color: sandybrown;
+    padding: 10px;
+}
+
+.items>div {
+    background-color: bisque;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+}
